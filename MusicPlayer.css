@@ -1,0 +1,425 @@
+body{
+    background-color: hsl(231deg 53% 10%);
+    color:white;
+    position: relative;
+}
+/*Navigation Section Styling is applied below*/
+#nav-bar {
+   position:fixed;
+   width:100vw;
+   display: flex;
+   justify-content: space-between;
+   box-shadow: 0 3px 20px 1px black;
+   z-index: 2;
+   background-color: hsl(231deg 53% 10%);
+   top:0%;
+   left:0%;
+}
+.part{
+    display: flex;
+}
+.two{
+  margin-right:2vw;
+}
+/* .Left-Side-Nav,.Right-Side-Nav{
+    display: flex;
+} */
+nav div{
+    display: inline-block;
+}
+#Player-Logo i{
+    font-size: 4rem;
+    color:lightskyblue;
+}
+#Player-Name p{
+    font-family: 'Yomogi', cursive;
+}
+ #Player-Name #Skull{
+    margin-bottom:-0.8rem;
+    margin-left:0.1rem;
+} 
+.Favourites{
+  font-family: 'Old Standard TT', serif;
+  font-size: 1.3rem;
+  margin-top:4vh;
+  margin-left: 5vw;
+}
+.Search-Bar{
+    background-color: hsl(230deg 55% 16%);
+    border-radius: 0.8rem;
+    height:1.7rem;
+    width:auto;
+    margin-top:4vh;
+    margin-right: 2vw;
+}
+.Search-Bar input:focus{
+    outline: none;
+}
+.Search-Bar input{
+    /* height:2rem;*/
+    width:16vw;
+    /* width:80%; */
+    background-color: hsl(230deg 55% 16%);
+    border-width:0px;
+    color:white;
+}
+.Search-icons{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.Search-Logo i{
+    padding-left:5px;
+}
+.Mic-Logo{
+    margin-right:2px;
+    color:hsl(201deg 17% 64%);
+    font-size: 1.2rem;
+}
+.dp img{
+    display: inline-block;
+    height:3rem;
+    width:2.5rem;
+    border-radius: 50%;
+}
+.notification-icon i{
+    margin-top:4.5vh;
+    margin-right:2vw;
+}
+.dp{
+    margin-right:1vw;
+    margin-top: 2vh;
+}
+/*Queue Aside Section*/
+aside{
+ position:fixed;
+ width:29%;
+ /* height:95vh; */
+  height:85vh;
+ /* border:2px solid red; */
+ margin-left:71%;
+ top:20vh;
+ overflow:scroll;
+}
+.Queue{
+    display: flex;
+    flex-direction: column;
+}
+.Queue-Heading{
+    display: flex;
+    /* justify-content: space-between; */
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    top:15%;
+    z-index: 2;
+    width:26%;
+}
+.Queue-Heading span{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-right: 1rem;
+}
+.Queue-drop-down{
+    margin-top:5px;
+    color:hsl(166deg 72% 60%);
+}
+.Queue-drop-down a{
+    text-decoration: none;
+    margin-right:1rem;
+    color:hsl(166deg 72% 60%);
+}
+select{
+    background-color:hsl(231deg 53% 10%);
+    color:hsl(166deg 72% 60%);
+    font-size: 1.1rem;
+    width:85px;
+    border-width: 0px;
+}
+select:focus{
+    background: transparent;
+    outline:none;
+}
+select option{
+    background-color: white;
+    color:grey;
+    font-size: 1rem;
+}
+select .Queue-option{
+    display:none;
+}
+/* .song{
+    display: flex;
+} */
+.song{
+    height:auto;
+    width:26vw;
+    /* border:2px solid green; */
+    display: flex;
+    /* justify-content:space-between; */
+    margin-top: 10px;
+}
+  
+.song div{
+    display:inline-block;
+    margin-right:1rem;
+}
+.song-photo{
+    height:3rem;
+    width:3rem;
+}
+.song-photo img{
+    height:100%;
+    width:100%;
+    opacity: 0.7;
+}
+.song-photo:hover{
+    background-image: url(https://us.123rf.com/450wm/4zevar/4zevar1509/4zevar150900035/44649773-play-button-icon.jpg?ver=6);
+    background-size: cover;
+    opacity: 0.5;
+}
+.Artist-name,.song-no{
+    color:hsl(220deg 8% 63%);
+}
+.song-name{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.like{
+    margin-top:4vh;
+}
+/* Styling of the music player bar that appears on selecting a song*/
+#player-photo{
+    display: none;
+    height:200px;
+    width:100%;
+}
+#player-photo img{
+    height:90px;
+    width:100%;
+}
+#player-photo:target{
+    display: flex;
+    position:fixed;
+    left:0;
+    top:88vh;
+    z-index: 4;
+    align-items:flex-start;
+}
+/*Main Section styling*/
+main{
+    width:70%;
+    /* border:2px solid red; */
+    position:absolute;
+    top:20vh;
+    display: flex;
+    flex-direction:column;
+}
+main div{
+    margin-top:5vh;
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: space-between;
+}
+/* Playlists section with three boxes*/
+.Playlists{
+    flex-direction:row;
+}
+.Playlist-Image{
+   width:25%;
+   height:30vh;
+   transition: all 0.2s ease-out;
+}
+.Playlists img{
+    width:100%;
+    height:100%;
+    transition: all 0.2s ease-out;
+ }
+
+.Playlists img:hover{
+   transform: scale(1.5);
+   opacity: 0.7;
+}
+/*Latest-Releases*/
+.Heading{
+    font-family: 'Trebuchet MS';
+    font-size: 1.5rem;
+}
+.Latest-Releases{
+    flex-direction: column;
+}
+ .Latest-song{
+    /* flex-wrap: wrap; */
+    /* margin-right:5px; */
+    margin-right:7%;
+ }
+.Latest-song .song-info{
+    margin-top:-4vh;
+}
+.Latest-song .like{
+    color:hsl(0deg 0% 70%);
+}
+.like{
+    width:10%;
+    /* overflow:hidden; */
+}
+.like select {
+    color:white;
+    appearance: none;
+    border:none;
+    font-family:'FontAwesome';
+}
+select i{
+    font-weight: 900;
+}
+.like select:focus{
+    background: transparent;
+}
+.Popular-Artists{
+    flex-direction: column;
+    justify-content:flex-start;
+}
+.Artist-Description{
+    display: flex;
+    flex-direction: column;
+}
+.Artist-Description img{
+ border-radius: 50%;
+ height:8rem;
+ width:8rem;
+ padding-bottom: 4px;
+}
+.Artist-Description p{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto;
+}
+.Artist-Description img:hover{
+    opacity: 0.2;
+}
+/* Mood Section*/
+
+.Different-Moods{
+    flex-direction: row;
+}
+.Mood{
+    height:150px;
+    width:30%;
+}
+.Container{
+    height:100%;
+    width:100%;
+     background-repeat: no-repeat;
+    /* margin-bottom: 20px; */
+    background-position: center;
+    background-size:100%;
+    /* overflow: hidden; */
+    font-size: 1.3rem;
+    opacity:0.4;
+    transition: all 0.3s ease-in-out;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Container span{
+    margin:auto;
+}
+  .Container:hover{
+   background-size:150%;
+} 
+.Party{
+    background-image: url(https://static.toiimg.com/photo/73045588.cms);
+}
+.Electronic{
+    background-image: url(https://i.ytimg.com/vi/DBW-Rq4iEhQ/maxresdefault.jpg);
+}
+.Night-out{
+    background-image: url(https://media.cntraveler.com/photos/607313c3d1058698d13c31b5/16:9/w_2560%2Cc_limit/FamilyCamping-2021-GettyImages-948512452-2.jpg);
+}
+/* Latest English or Hindi Songs Styling*/
+.Latest-English,.English-Song{
+    flex-direction: column;
+}
+.English-Song{
+    margin-right:2vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.English-Song-List{
+    justify-content: flex-start;
+}
+.English-Song img{
+    height:8rem;
+    width:8rem;
+}
+.English-Song div{
+    margin-top:2vh;
+}
+.English-Song .Singer{
+    color:darkgray;
+}
+/*Responsiveness of the Web page being handled*/
+ /* @media screen and (max-width:1080px) {
+    .Latest-song-list{
+      flex-direction: column;
+    }
+    .Latest-song-list .song{
+        width:100%;
+      }
+    
+  } */
+/* @media screen and (max-width:800px) {
+    aside{
+        width:40%;
+        margin-left:60%;
+        margin-right:0;
+    }
+    main{
+        width:60%;
+    }
+    aside .song{
+        margin-right: 0;
+        width:100%;
+    }
+    .Different-Moods{
+        flex-direction:column;
+    }
+    .Mood{
+        width:95%;
+    }
+    /* #player-photo{
+        display: none;
+        width:100%;
+        background-image: url(Player.png);
+        background-size:100%;
+        background-repeat:no-repeat;
+    } */
+    /*#player-photo:target{
+        display: flex;
+        position: fixed;
+        left:0;
+        top:93vh;
+        background-image: url(PlayerResponsive.png);
+        background-repeat: no-repeat;
+        width:100%;
+        background-size: contain;
+        z-index: 4;
+    }
+    #player-photo img{
+        height:0;
+        width:0;
+    }
+    .Playlists{
+        flex-direction:column;
+    }
+    .Playlist-Image{
+        width:100%;
+    }
+  } */
+  /* @media screen and (max-width:650px) {
+    aside{
+        width:50%;
+        margin-left: 50%;
+        margin-right: 0;
+    }
+    main{
+        width:50%;
+    }
+    aside .song{
+        margin-right:0;
+        width:100%;
+    }
+  }  */
