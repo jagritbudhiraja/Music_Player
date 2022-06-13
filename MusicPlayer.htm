@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MusicPlayer.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Yomogi&display=swap" rel="stylesheet">
+
+    <title>Music Player</title>
+</head>
+<body>
+    <header>
+        <!-- navigation bar for Searching,Login,Notifications etc-->
+    <nav id="nav-bar">
+        <div class="part one">
+        <div class="Logo">
+        <div id="Player-Logo">
+        <i class="fab fa-napster"></i>
+        </div>
+
+        <div id="Player-Name">
+        <p id="Skull"> Skull</p>
+        <p id="Studio"> Studio</p>
+        </div>
+    </div>
+        <!-- <div class="Favourites"> -->
+            <!-- </div> -->
+        <div class="Favourites">
+        <span>
+            Favourites
+            </span>
+            </div>
+            </div>
+            <div class="part two">
+            <div class="Search-Bar">
+                <div class="Search-icons Search-Logo">
+                <i class="fas fa-search"></i>
+                </div>
+             <input type="text" id="Search" Name="Search" placeholder="Search">
+             <div class="Search-icons Mic-Logo">
+             <i class="fas fa-microphone"></i>
+            </div>
+            </div>
+            <div class="notification-icon">
+                <i class="fas fa-bell"></i>
+            </div>
+            <div class="dp">
+                <img src="https://i.pinimg.com/originals/c6/a3/dc/c6a3dc8757ea6d791e2331f194b7ca15.jpg" alt="Boy">
+            </div>
+        </div>
+    </nav>
+    </header>
+    <aside>
+      <!-- Queue depicting the order in which songs will be played -->
+        <div class="Queue">
+          <div class="Queue-Heading">
+            <span> Queue</span>
+            <div class="Queue-drop-down">
+            <!-- <a href="#drop-down-list"> <i class="fas fa-chevron-down"></i></a> -->
+              <select>
+                <option disabled selected class="Queue-option"> Queue</option>
+              <option>Playlists</option>
+              <option>Favourite Songs</option>
+              </select>
+            </div>
+            </div>
+          </div>
+            <div class="song-list">
+              <div class="song Queue-song">
+                  <div class="song-info">
+                  <div class="song-no">
+                      <span>1</span>
+                  </div>
+                  <div class="song-photo">
+                    <a href="#player-photo">
+                      <img src="https://images.squarespace-cdn.com/content/v1/583863c1e6f2e1216884123c/1501780578502-9VLVVYAWB2JLO86NWA0U/image-asset.jpeg
+                      " alt="">
+                    
+          
+                </a>
+        
+  
+                </div>
+                  <div class="song-details">
+                    <p class="song-name">Shadows of the day</p>
+                    <p class="Artist-name">Linkin Park</p>
+                  </div>
+                </div>
+                  <div class="like">
+                  <i class="far fa-heart"></i>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="song Queue-song">
+                    <div class="song-info">
+                    <div class="song-no">
+                        <span>2</span>
+                    </div>
+                    <div class="song-photo">
+                      <a href="#player-photo">
+
+                    <img src="https://images.squarespace-cdn.com/content/v1/583863c1e6f2e1216884123c/1501780578502-9VLVVYAWB2JLO86NWA0U/image-asset.jpeg" alt="song-photo">
+                  </a>
+                  </div>
+                    <div class="song-details">
+                      <p class="song-name">Shadows of the day</p>
+                      <p class="Artist-name">Linkin Park</p>
+                    </div>
+                  </div>
+                    <div class="like">
+                    <i class="far fa-heart"></i>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="song Queue-song">
+                        <div class="song-info">
+                        <div class="song-no">
+                            <span>3</span>
+                        </div>
+                        <div class="song-photo">
+                          <a href="#player-photo">
+                            <img src="https://images.squarespace-cdn.com/content/v1/583863c1e6f2e1216884123c/1501780578502-9VLVVYAWB2JLO86NWA0U/image-asset.jpeg" alt="song-photo">
+                          </a>
+                      </div>
+                        <div class="song-details">
+                          <p class="song-name">Shadows of the day</p>
+                          <p class="Artist-name">Linkin Park</p>
+                        </div>
+                      </div>
+                        <div class="like">
+                        <i class="far fa-heart"></i>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="song  Queue-song">
+                            <div class="song-info">
+                            <div class="song-no">
+                                <span>4</span>
+                            </div>
+                            <div class="song-photo">
+                              <a href="#player-photo">
+                                <img src="https://images.squarespace-cdn.com/content/v1/583863c1e6f2e1216884123c/1501780578502-9VLVVYAWB2JLO86NWA0U/image-asset.jpeg" alt="song-photo">
+                              </a>
+                          </div>
+                            <div class="song-details">
+                              <p class="song-name">Shadows of the day</p>
+                              <p class="Artist-name">Linkin Park</p>
+                            </div>
+                          </div>
+                            <div class="like">
+                            <i class="far fa-heart"></i>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="song  Queue-song">
+                                <div class="song-info">
+                                <div class="song-no">
+                                    <span>5</span>
+                                </div>
+                                <div class="song-photo">
+                                  <a href="#player-photo">
+                                    <img src="https://images.squarespace-cdn.com/content/v1/583863c1e6f2e1216884123c/1501780578502-9VLVVYAWB2JLO86NWA0U/image-asset.jpeg" alt="song-photo">
+                                  </a>
+                              </div>
+                                <div class="song-details">
+                                  <p class="song-name">Shadows of the day</p>
+                                  <p class="Artist-name">Linkin Park</p>
+                                </div>
+                              </div>
+                                <div class="like">
+                                <i class="far fa-heart"></i>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="song  Queue-song">
+                                    <div class="song-info">
+                                    <div class="song-no">
+                                        <span>6</span>
+                                    </div>
+                                    <div class="song-photo">
+                                  <a href="#player-photo">
+                                    <img src="https://images.squarespace-cdn.com/content/v1/583863c1e6f2e1216884123c/1501780578502-9VLVVYAWB2JLO86NWA0U/image-asset.jpeg" alt="song-photo">
+                                  </a>
+                                  </div>
+                                    <div class="song-details">
+                                      <p class="song-name">Shadows of the day</p>
+                                      <p class="Artist-name">Linkin Park</p>
+                                    </div>
+                                  </div>
+                                    <div class="like">
+                                    <i class="far fa-heart"></i>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="song  Queue-song">
+                                        <div class="song-info">
+                                        <div class="song-no">
+                                            <span>7</span>
+                                        </div>
+                                        <div class="song-photo">
+                                          <a href="#player-photo">
+                                            <img src="https://images.squarespace-cdn.com/content/v1/583863c1e6f2e1216884123c/1501780578502-9VLVVYAWB2JLO86NWA0U/image-asset.jpeg" alt="song-photo">
+                                          </a>
+                                      </div>
+                                        <div class="song-details">
+                                          <p class="song-name">Shadows of the day</p>
+                                          <p class="Artist-name">Linkin Park</p>
+                                        </div>
+                                      </div>
+                                        <div class="like">
+                                        <i class="far fa-heart"></i>
+                                        </div>
+                                        </div>
+                                        </div>
+        </div>
+    </aside>
+    <!-- the music player bar which will appear at the bottom of the screen when you play a song -->
+    <div id="player-photo">
+      <img src="Player.png" alt="">
+    </div>
+    <main>
+      <!-- Some of the best Music Playlists -->
+      <div class="Playlists">
+        <div class="Playlist-Image">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Billboard_Hot_100_logo.jpg" alt="top100">
+      </div>
+      <div class="Playlist-Image">
+       <img src="https://yt3.ggpht.com/ytc/AKedOLQsk8zxlGhWyOen229DDgPEUSrquDY4dCaV8TfhBA=s900-c-k-c0x00ffffff-no-rj" alt="Chartbusters">
+       </div>
+       <div class="Playlist-Image">
+       <img src="https://i.scdn.co/image/ab67706c0000bebb303378a5df6ae701c7a61378" alt="NF">
+       </div>
+      </div>
+      <!-- Recently Released Songs -->
+      <div class="Latest-Releases">
+        <div class="Heading">
+          <span> Latest Release</span>
+        </div>
+        <div class="Latest-song-list">
+        <div class="song Latest-song">
+          <div class="song-info">
+          <div class="song-photo">
+            <a href="#player-photo">
+          <img src="https://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png" alt="song-photo">
+          </a>
+          </div>
+          <div class="song-details">
+            <p class="song-name">Hey You</p>
+            <p class="Artist-name">Pink Floyd</p>
+          </div>
+        </div>
+          <div class="like">
+            <select>
+              
+              <option disabled selected class="Queue-option Dotted">...</option>
+              <option>  Play</option>
+              <option > Add to Queue</option>
+              <option > Add to Favourites</option>
+              <option > Get Info </option>
+            </select>
+          <p> 4:50</p>
+          </div>
+          </div>
+          <div class="song Latest-song">
+            <div class="song-info">
+            <div class="song-photo">
+              <a href="#player-photo">
+            <img src="https://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png" alt="song-photo">
+            </a>
+            </div>
+            <div class="song-details">
+              <p class="song-name">Hey You</p>
+              <p class="Artist-name">Pink Floyd</p>
+            </div>
+          </div>
+            <div class="like">
+              <select>
+              
+                <option disabled selected class="Queue-option Dotted">...</option>
+                <option>  Play Now</option>
+                <option > Add to Queue</option>
+                <option > Add to Favourites</option>
+                <option > Get Info </option>
+              </select>
+            <p> 4:50</p>
+            </div>
+            </div>
+            <div class="song Latest-song">
+              <div class="song-info">
+              <div class="song-photo">
+                <a href="#player-photo">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png" alt="song-photo">
+                  </a>
+              </div>
+              <div class="song-details">
+                <p class="song-name">Hey You</p>
+                <p class="Artist-name">Pink Floyd</p>
+              </div>
+            </div>
+              <div class="like">
+                <select>
+              
+                  <option disabled selected class="Queue-option Dotted">...</option>
+                  <option > Play Now</option>
+                  <option > Add to Queue</option>
+                  <option > Add to Favourites</option>
+                  <option > Get Info </option>
+                </select>
+              <p> 4:50</p>
+              </div>
+              </div>
+              <div class="song Latest-song">
+                <div class="song-info">
+                <div class="song-photo">
+                  <a href="#player-photo">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png" alt="song-photo">
+                    </a>
+                </div>
+                <div class="song-details">
+                  <p class="song-name">Hey You</p>
+                  <p class="Artist-name">Pink Floyd</p>
+                </div>
+              </div>
+                <div class="like">
+                  <select>
+              
+                    <option disabled selected class="Queue-option Dotted">...</option>
+                    <option > Play Now</option>
+                    <option > Add to Queue</option>
+                    <option > Add to Favourites</option>
+                    <option > Get Info </option>
+                  </select>
+                <p> 4:50</p>
+                </div>
+                </div>
+              </div>
+          </div>
+          <!-- Section recommeding some of the currently most popular Artists -->
+          <div class="Popular-Artists">
+            <div class="Heading">
+              <span> Popular Artists</span>
+            </div>
+            <div class="Artist-List">
+            <div class="Artist-Description">
+              <a href="SinglePlaylist.htm" target="_self">
+              <img src="https://images.indianexpress.com/2016/01/lana-del-rey-759.jpg" alt="Lana Del Rey">
+              </a>
+              <p class="Name"> Lana Del Rey</p>
+            </div>
+            <div class="Artist-Description">
+              <a href="SinglePlaylist.htm" target="_self">
+              <img src="https://townsquare.media/site/366/files/2016/10/avenged_sevenfold_classic_by_mckee91.jpg?w=1200&h=0&zc=1&s=0&a=t&q=89" alt="Avenged Sevenfold">
+              </a>
+              <p class="Name"> Avenged Sevenfold</p>
+            </div>
+            <div class="Artist-Description">
+              <a href="SinglePlaylist.htm" target="_self">
+              <img src="https://i.scdn.co/image/ab6761610000e5eb50defaf9fc059a1efc541f4c" alt="Guns N' Roses">
+              </a>
+              <p class="Name"> Guns N' Roses</p>
+            </div>
+            <div class="Artist-Description">
+              <a href="SinglePlaylist.htm" target="_self">
+              <img src="https://i.pinimg.com/originals/81/b8/ae/81b8aee3f5edf1b60d2acba59fa03b66.jpg" alt="Disturbed">
+              </a>
+              <p class="Name"> Disturbed</p>
+            </div>
+            <div class="Artist-Description">
+              <a href="SinglePlaylist.htm" target="_self">
+              <img src="https://www.nme.com/wp-content/uploads/2020/09/nirvanalogo.jpg" alt="Nirvana">
+              </a>
+              <p class="Name"> Nirvana</p>
+            </div>
+            <div class="Artist-Description">
+              <a href="SinglePlaylist.htm" target="_self">
+    
+              <img src="https://i.pinimg.com/originals/8b/8f/b2/8b8fb268842167174d0265df49c2a0ba.jpg" alt="Metallica">
+              </a>
+              <p class="Name">Metallica</p>
+            </div>
+          </div>
+          </div>
+          <!-- Playlists being set for different types of moods  -->
+          <div class="Different-Moods">
+            <div class="Mood">
+            <div class="Party Container">
+              <span> Party</span>
+            <!-- <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2017/10/rsz_shutterstock_199419065.jpg" alt="Party"> -->
+          </div>
+        </div>
+             <div class="Mood">
+            <div class="Electronic Container">
+              <span> Electronic</span>
+            <!-- <img src="https://www.careersinmusic.com/wp-content/uploads/2019/07/how-to-make-electronic-music.jpg" alt="Electronic"> -->
+          </div>
+        </div>
+          <div class="Mood">
+          <div class="Night-out Container">
+            <span> Night-out</span>
+            <!-- <img src="https://media.cntraveler.com/photos/607313c3d1058698d13c31b5/16:9/w_2560%2Cc_limit/FamilyCamping-2021-GettyImages-948512452-2.jpg" alt="Night-out"> -->
+          </div>
+        </div>
+          </div>
+          <!-- Latest English Songs -->
+          <div class="Latest-English">
+            <div class="Heading">
+              <span> Latest English</span>
+            </div>
+            <div class="English-Song-List">
+              <div class="English-Song">
+                <div class="English-Song-photo">
+                <img src="https://uploads-ssl.webflow.com/5eb6c518ccd7e71d49519db8/5fbc31356dfee64003b5ae81_anders-jilden-AkUR27wtaxs-unsplash.jpg" alt="English-Song-photo">
+              </div>
+              <div class="English-Song-Name">
+                <span>
+                  Drift Away
+                </span>
+              </div>
+              <div class="Singer">
+                <span>
+                  Apex Predator
+                </span>
+              </div>
+              </div>
+              <div class="English-Song">
+                <div class="English-Song-photo">
+                <img src="https://uploads-ssl.webflow.com/5eb6c518ccd7e71d49519db8/5fbc31356dfee64003b5ae81_anders-jilden-AkUR27wtaxs-unsplash.jpg" alt="English-Song-photo">
+              </div>
+              <div class="English-Song-Name">
+                <span>
+                  Drift Away
+                </span>
+              </div>
+              <div class="Singer">
+                <span>
+                  Apex Predator
+                </span>
+              </div>
+              </div>
+              <div class="English-Song">
+                <div class="English-Song-photo">
+                <img src="https://uploads-ssl.webflow.com/5eb6c518ccd7e71d49519db8/5fbc31356dfee64003b5ae81_anders-jilden-AkUR27wtaxs-unsplash.jpg" alt="English-Song-photo">
+              </div>
+              <div class="English-Song-Name">
+                <span>
+                  Drift Away
+                </span>
+              </div>
+              <div class="Singer">
+                <span>
+                  Apex Predator
+                </span>
+              </div>
+              </div>
+              <div class="English-Song">
+                <div class="English-Song-photo">
+                <img src="https://uploads-ssl.webflow.com/5eb6c518ccd7e71d49519db8/5fbc31356dfee64003b5ae81_anders-jilden-AkUR27wtaxs-unsplash.jpg" alt="English-Song-photo">
+              </div>
+              <div class="English-Song-Name">
+                <span>
+                  Drift Away
+                </span>
+              </div>
+              <div class="Singer">
+                <span>
+                  Apex Predator
+                </span>
+              </div>
+              </div>
+              <div class="English-Song">
+                <div class="English-Song-photo">
+                <img src="https://uploads-ssl.webflow.com/5eb6c518ccd7e71d49519db8/5fbc31356dfee64003b5ae81_anders-jilden-AkUR27wtaxs-unsplash.jpg" alt="English-Song-photo">
+              </div>
+              <div class="English-Song-Name">
+                <span>
+                  Drift Away
+                </span>
+              </div>
+              <div class="Singer">
+                <span>
+                  Apex Predator
+                </span>
+              </div>
+              </div>
+              <div class="English-Song">
+                <div class="English-Song-photo">
+                <img src="https://uploads-ssl.webflow.com/5eb6c518ccd7e71d49519db8/5fbc31356dfee64003b5ae81_anders-jilden-AkUR27wtaxs-unsplash.jpg" alt="English-Song-photo">
+              </div>
+              <div class="English-Song-Name">
+                <span>
+                  Drift Away
+                </span>
+              </div>
+              <div class="Singer">
+                <span>
+                  Apex Predator
+                </span>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- Latest Hindi Songs being applied with similar properties like Latest English Songs Section-->
+          <div class="Latest-English">
+            <div class="Heading">
+              <span> Latest Hindi</span>
+            </div>
+            <div class="English-Song-List">
+              <div class="English-Song">
+                <div class="English-Song-photo">
+                <img src="https://uploads-ssl.webflow.com/5eb6c518ccd7e71d49519db8/5fbc31356dfee64003b5ae81_anders-jilden-AkUR27wtaxs-unsplash.jpg" alt="English-Song-photo">
+              </div>
+              <div class="English-Song-Name">
+                <span>
+                  Drift Away
+                </span>
+              </div>
+              <div class="Singer">
+                <span>
+                  Apex Predator
+                </span>
+              </div>
+              </div>
+              <div class="English-Song">
+                <div class="English-Song-photo">
+                <img src="https://uploads-ssl.webflow.com/5eb6c518ccd7e71d49519db8/5fbc31356dfee64003b5ae81_anders-jilden-AkUR27wtaxs-unsplash.jpg" alt="English-Song-photo">
+              </div>
+              <div class="English-Song-Name">
+                <span>
+                  Drift Away
+                </span>
+              </div>
+              <div class="Singer">
+                <span>
+                  Apex Predator
+                </span>
+              </div>
+              </div>
+              <div class="English-Song">
+                <div class="English-Song-photo">
+                <img src="https://uploads-ssl.webflow.com/5eb6c518ccd7e71d49519db8/5fbc31356dfee64003b5ae81_anders-jilden-AkUR27wtaxs-unsplash.jpg" alt="English-Song-photo">
+              </div>
+              <div class="English-Song-Name">
+                <span>
+                  Drift Away
+                </span>
+              </div>
+              <div class="Singer">
+                <span>
+                  Apex Predator
+                </span>
+              </div>
+              </div>
+              <div class="English-Song">
+                <div class="English-Song-photo">
+                <img src="https://uploads-ssl.webflow.com/5eb6c518ccd7e71d49519db8/5fbc31356dfee64003b5ae81_anders-jilden-AkUR27wtaxs-unsplash.jpg" alt="English-Song-photo">
+              </div>
+              <div class="English-Song-Name">
+                <span>
+                  Drift Away
+                </span>
+              </div>
+              <div class="Singer">
+                <span>
+                  Apex Predator
+                </span>
+              </div>
+              </div>
+              <div class="English-Song">
+                <div class="English-Song-photo">
+                <img src="https://uploads-ssl.webflow.com/5eb6c518ccd7e71d49519db8/5fbc31356dfee64003b5ae81_anders-jilden-AkUR27wtaxs-unsplash.jpg" alt="English-Song-photo">
+              </div>
+              <div class="English-Song-Name">
+                <span>
+                  Drift Away
+                </span>
+              </div>
+              <div class="Singer">
+                <span>
+                  Apex Predator
+                </span>
+              </div>
+              </div>
+              <div class="English-Song">
+                <div class="English-Song-photo">
+                <img src="https://uploads-ssl.webflow.com/5eb6c518ccd7e71d49519db8/5fbc31356dfee64003b5ae81_anders-jilden-AkUR27wtaxs-unsplash.jpg" alt="English-Song-photo">
+              </div>
+              <div class="English-Song-Name">
+                <span>
+                  Drift Away
+                </span>
+              </div>
+              <div class="Singer">
+                <span>
+                  Apex Predator
+                </span>
+              </div>
+              </div>
+            </div>
+          </div>
+    </main>
+</body>
+</html>
